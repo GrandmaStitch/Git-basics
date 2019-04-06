@@ -66,6 +66,10 @@
   - #### only display information of a specific commit
     
     `git show HEAD~6 --stat`
+
+  - view HEAD reference's current commit's parent
+
+    `git show HEAD~ or git show HEAD^`
     
 - ### display all commits sorted by author and title
 
@@ -74,3 +78,13 @@
   - #### -s to show just the number of commits (rather than each commit's message) and -n to sort them numerically (rather than alphabetically by author name)
 
     `git shortlog -s -n`
+
+- ### Relative Commit References
+
+  - \^ or \^1 indicates the first parent of the commit
+  - \^2 indicates the second parent of a merge commit
+  - \^^ indicates first parent's first parent
+  - \~ indicates the first parent commit
+  - \~2 indicates the grand-parent commit
+  - \~3 indicates the great grand-parent commit
+  - view branch master's most-recent commit's grand-parent commit
