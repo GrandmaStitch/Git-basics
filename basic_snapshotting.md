@@ -28,6 +28,14 @@
 
   `git diff`
 
+- ### edit the most-recent commit message
+
+  `git commmit --amend`
+
+- ### reverse a previously made commit(undo a commit)
+  
+  `git revert <SHA-of-commit-to-revert>`
+
 - ### having Git ignore files
   
   create a specially named file .gitignore in the same directory that the hidden .git directory is located to tell Git about the files that Git should not track
