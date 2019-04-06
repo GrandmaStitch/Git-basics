@@ -36,6 +36,18 @@
   
   `git revert <SHA-of-commit-to-revert>`
 
+- ### unstages committed changes(default)
+
+  `git reset --mixed <reference-to-commit>`
+
+- ### moves committed changes to the staging index
+
+  `git reset --soft <reference-to-commit>`
+
+- ### erase commits
+
+  `git reset --hard <reference-to-commit>`
+
 - ### having Git ignore files
   
   create a specially named file .gitignore in the same directory that the hidden .git directory is located to tell Git about the files that Git should not track
@@ -49,4 +61,4 @@
   - '\*' - matches 0 or more characters
   - '?' - matches 1 character
   - '\[abc\]' - matches a,b,_or_c
-  - '\*\*' - matches nested directories - a/**/z matches(a/z, a/b/z, a/b/c/z)
+  - '\*\*' - matches nested directories - a/\*\*/z matches(a/z, a/b/z, a/b/c/z)
